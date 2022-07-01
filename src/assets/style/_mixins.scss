@@ -1,0 +1,105 @@
+//Fonts-mixin
+@mixin font-button($device) {
+  color: #0050ef;
+  @if $device== 'desktop' {
+    font: normal 600 16px/20px 'Montserrat', sans-serif;
+  }
+  @if $device== 'mobile' {
+    font: normal 600 14px/17px 'Montserrat', sans-serif;
+  }
+}
+
+@mixin font-slider-title($device) {
+  color: #ffffff;
+  @if $device== 'desktop' {
+    font: normal 600 40px/56px 'Montserrat', sans-serif;
+  }
+  @if $device== 'mobile' {
+    font: normal 600 20px/24px 'Montserrat', sans-serif;
+  }
+}
+
+@mixin font-slider-description($device) {
+  color: #ffffff;
+  @if $device== 'desktop' {
+    font: normal 600 16px/24px 'Montserrat', sans-serif;
+  }
+  @if $device== 'mobile' {
+    font: normal 400 14px/22px 'Montserrat', sans-serif;
+  }
+}
+
+@mixin font-filter($device) {
+  color: #888888;
+  @if $device== 'desktop' {
+    font: normal 600 16px/20px 'Montserrat', sans-serif;
+  }
+  @if $device== 'mobile' {
+    font: normal 600 14px/17px 'Montserrat', sans-serif;
+  }
+}
+
+@mixin font-card-date($device) {
+  color: #10b2d0;
+  @if $device== 'desktop' {
+    font: normal 600 12px/18px 'Montserrat', sans-serif;
+  }
+  @if $device== 'mobile' {
+    font: normal 600 12px/18px 'Montserrat', sans-serif;
+  }
+}
+
+@mixin font-card-title($device) {
+  color: rgba(0, 0, 0, 0.65);
+  @if $device== 'desktop' {
+    font: normal 600 20px/32px 'Montserrat', sans-serif;
+  }
+  @if $device== 'mobile' {
+    font: normal 600 18px/24px 'Montserrat', sans-serif;
+  }
+}
+
+@mixin font-card-description($device) {
+  color: #888888;
+  @if $device== 'desktop' {
+    font: normal 400 16px/24px 'Montserrat', sans-serif;
+  }
+  @if $device== 'mobile' {
+    font: normal 400 14px/22px 'Montserrat', sans-serif;
+  }
+}
+
+@mixin font-footer-copyright($device) {
+  color: rgba(255, 255, 255, 0.8);
+  @if $device== 'desktop' {
+    font: normal 400 14px/20px 'Montserrat', sans-serif;
+  }
+  @if $device== 'mobile' {
+    font: normal 400 12px/18px 'Montserrat', sans-serif;
+  }
+}
+
+@mixin font-footer-nav($device) {
+  color: #ffffff;
+  @if $device== 'desktop' {
+    font: normal 500 16px/20px 'Montserrat', sans-serif;
+  }
+  @if $device== 'mobile' {
+    font: normal 500 14px/17px 'Montserrat', sans-serif;
+  }
+}
+
+@mixin font-header-contact($device) {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #888888;
+  @if $device== 'desktop' {
+    font: normal 500 16px/20px 'Montserrat', sans-serif;
+  }
+  @if $device== 'mobile' {
+    font: normal 500 16px/20px 'Montserrat', sans-serif;
+  }
+}
