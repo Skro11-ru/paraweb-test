@@ -16,8 +16,9 @@
 - Vue-select
 - Moment
 - Axios
-- Vue-datepicker
-- ***
+- Vue-datepicker 
+
+---
 
 ### Задание:
 
