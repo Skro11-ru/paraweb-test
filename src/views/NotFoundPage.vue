@@ -2,7 +2,7 @@
   <div class="not-found-page">
     <div class="not-found-page__container">
       <h1>404 page</h1>
-      <router-link to="/">Домой</router-link>
+      <router-link to="/paraweb-test">Домой</router-link>
     </div>
   </div>
 </template>
