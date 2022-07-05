@@ -10,7 +10,7 @@ export default defineConfig({
   plugins: [
     vue(),
     legacy({
-      targets: ['defaults', 'not IE 11'],
+      targets: ['defaults'],
     }),
     // auto import component (iconify)
     Components({
