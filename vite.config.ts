@@ -7,7 +7,7 @@ import legacy from '@vitejs/plugin-legacy';
 import { resolve } from 'path';
 
 export default defineConfig({
-  base: '/paraweb-test/',
+  base: '/',
   plugins: [
     vue(),
     legacy({
