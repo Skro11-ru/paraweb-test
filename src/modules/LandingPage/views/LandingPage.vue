@@ -311,6 +311,7 @@ const isShowListArticles = computed(() => !!listArticles.value.length && !loader
     }
   }
   &__list {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
