@@ -7,8 +7,8 @@
   >
     <SwiperSlide v-for="slide in slideList" :key="slide.id" class="slide">
       <div class="slide__background">
-        <img class="slide__img_desktop" :src="slide.imgDesktop" alt="img-slider" />
-        <img class="slide__img_mobile" :src="slide.imgMobile" alt="img-slider" />
+        <img class="slide__img_desktop" :src="`${slide.imgDesktop}`" alt="img-slider" />
+        <img class="slide__img_mobile" :src="`${slide.imgMobile}`" alt="img-slider" />
       </div>
       <div class="slide__content">
         <h2 class="slide__title" v-html="slide.title"></h2>
@@ -24,16 +24,17 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Navigation, Pagination, A11y } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/bundle';
-import imgPathDesktop from '@/assets/images/img-slider-desktop.png';
-import imgPathMobile from '@/assets/images/img-slider-mobile.png';
+import { HTMLAttributes } from 'vue';
 
+const imgPathDesktop = new URL('../../../../assets/images/img-slider-desktop.png', import.meta.url);
+const imgPathMobile = new URL('../../../../assets/images/img-slider-mobile.png', import.meta.url);
 const slideList = [
   {
     id: 1,
     title: `Как бизнесу сохранять &nbsp; IT-кадры на фоне кризиса`,
     text: 'Инструменты, которые могут использовать компании для удержания сотрудников',
-    imgDesktop: imgPathDesktop,
-    imgMobile: imgPathMobile,
+    imgDesktop: imgPathDesktop as HTMLAttributes,
+    imgMobile: imgPathMobile as HTMLAttributes,
     buttonText: 'Подробнее',
     link: '#',
   },
@@ -41,8 +42,8 @@ const slideList = [
     id: 2,
     title: 'Как бизнесу сохранять IT-кадры на фоне кризиса',
     text: 'Инструменты, которые могут использовать компании для удержания сотрудников',
-    imgDesktop: imgPathDesktop,
-    imgMobile: imgPathMobile,
+    imgDesktop: imgPathDesktop as HTMLAttributes,
+    imgMobile: imgPathMobile as HTMLAttributes,
     buttonText: 'Подробнее',
     link: '#',
   },
@@ -50,8 +51,8 @@ const slideList = [
     id: 3,
     title: 'Как бизнесу сохранять IT-кадры на фоне кризиса',
     text: 'Инструменты, которые могут использовать компании для удержания сотрудников',
-    imgDesktop: imgPathDesktop,
-    imgMobile: imgPathMobile,
+    imgDesktop: imgPathDesktop as HTMLAttributes,
+    imgMobile: imgPathMobile as HTMLAttributes,
     buttonText: 'Подробнее',
     link: '#',
   },
