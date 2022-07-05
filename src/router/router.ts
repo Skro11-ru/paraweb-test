@@ -3,7 +3,7 @@ import LandingPage from '@/modules/LandingPage/views/LandingPage.vue';
 
 const routes = [
   {
-    path: '/',
+    path: '/paraweb-test',
     name: 'LandingPage',
     component: LandingPage,
   },
