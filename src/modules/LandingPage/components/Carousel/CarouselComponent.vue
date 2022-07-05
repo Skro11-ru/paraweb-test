@@ -24,14 +24,16 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Navigation, Pagination, A11y } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/bundle';
+import imgPathDesktop from '@/assets/images/img-slider-desktop.png';
+import imgPathMobile from '@/assets/images/img-slider-mobile.png';
 
 const slideList = [
   {
     id: 1,
     title: `Как бизнесу сохранять &nbsp; IT-кадры на фоне кризиса`,
     text: 'Инструменты, которые могут использовать компании для удержания сотрудников',
-    imgDesktop: 'src/assets/images/img-slider-desktop.png',
-    imgMobile: 'src/assets/images/img-slider-mobile.png',
+    imgDesktop: imgPathDesktop,
+    imgMobile: imgPathMobile,
     buttonText: 'Подробнее',
     link: '#',
   },
@@ -39,8 +41,8 @@ const slideList = [
     id: 2,
     title: 'Как бизнесу сохранять IT-кадры на фоне кризиса',
     text: 'Инструменты, которые могут использовать компании для удержания сотрудников',
-    imgDesktop: 'src/assets/images/img-slider-desktop.png',
-    imgMobile: 'src/assets/images/img-slider-mobile.png',
+    imgDesktop: imgPathDesktop,
+    imgMobile: imgPathMobile,
     buttonText: 'Подробнее',
     link: '#',
   },
@@ -48,8 +50,8 @@ const slideList = [
     id: 3,
     title: 'Как бизнесу сохранять IT-кадры на фоне кризиса',
     text: 'Инструменты, которые могут использовать компании для удержания сотрудников',
-    imgDesktop: 'src/assets/images/img-slider-desktop.png',
-    imgMobile: 'src/assets/images/img-slider-mobile.png',
+    imgDesktop: imgPathDesktop,
+    imgMobile: imgPathMobile,
     buttonText: 'Подробнее',
     link: '#',
   },
