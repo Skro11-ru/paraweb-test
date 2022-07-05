@@ -159,7 +159,7 @@ const slideList = [
     height: 100%;
   }
 }
-:deep {
+:deep() {
   .swiper-pagination {
     width: auto;
     margin-left: 134px;
@@ -191,4 +191,35 @@ const slideList = [
     }
   }
 }
+
+//:deep(.swiper-pagination) {
+//  width: auto;
+//  margin-left: 134px;
+//  margin-bottom: 49px;
+//  @media (max-width: $xl) {
+//    margin-left: 30px;
+//    margin-bottom: 20px;
+//  }
+//  @media (max-width: $lg) {
+//    margin-left: 12px;
+//    margin-bottom: 10px;
+//  }
+//  @media (max-width: $xxs) {
+//    margin-left: 12px;
+//    margin-bottom: 6px;
+//  }
+//}
+//:deep(.swiper-pagination-bullet) {
+//  width: 28px;
+//  height: 3px;
+//  opacity: 0.3;
+//  background: #fff;
+//  border-radius: 2px;
+//  @media (max-width: $xxs) {
+//    width: 19px;
+//  }
+//}
+//:deep(.swiper-pagination-active) {
+//  opacity: 1;
+//}
 </style>

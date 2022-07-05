@@ -351,7 +351,7 @@ const isShowListArticles = computed(() => !!listArticles.value.length && !loader
       border: 1px solid #aaaeb7;
       transition: none;
     }
-    :deep {
+    :deep() {
       .vs__dropdown-toggle {
         border: none;
       }
@@ -412,7 +412,7 @@ const isShowListArticles = computed(() => !!listArticles.value.length && !loader
       @include font-filter('mobile');
       height: 50px;
     }
-    :deep {
+    :deep() {
       .dp__main {
         @media (max-width: $xl) {
           width: 100%;

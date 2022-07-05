@@ -10,7 +10,8 @@ export default defineConfig({
   plugins: [
     vue(),
     legacy({
-      targets: ['defaults'],
+      targets: ['defaults', 'ie >= 11'],
+      additionalLegacyPolyfills: ['regenerator-runtime/runtime'],
     }),
     // auto import component (iconify)
     Components({

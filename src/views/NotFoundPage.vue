@@ -7,7 +7,9 @@
   </div>
 </template>
 
-<script lang="ts"></script>
+<script lang="ts">
+export {};
+</script>
 
 <style scoped lang="scss">
 .not-found-page {
